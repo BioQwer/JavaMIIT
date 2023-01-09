@@ -16,7 +16,6 @@ public class Main extends HttpServlet{
         resp.setContentType("application/json; charset=utf-8");
         try (PrintWriter out = resp.getWriter()) {
             out.println("pong " + NumberKeeper.getInstance().getPong());
-            out.close();
         }
     }
 }
